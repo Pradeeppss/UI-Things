@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  align-items: center;
+  gap: 2rem;
+  background-color: hsl(0 0% 100% / 0.2);
+  backdrop-filter: blur(1em);
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.linkContainer {
+  color: white;
+}
+.linkContainer:hover {
+  background-color: rgb(49, 48, 48);
+}
+.linkContainer a {
+  display: inline-block;
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+.active {
+  background-color: rgb(69, 66, 66);
+}

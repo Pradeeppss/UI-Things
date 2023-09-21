@@ -1,0 +1,35 @@
+.container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+}
+
+.btn_card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 0.8;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  transition: 300ms;
+}
+.btn_card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.3rem;
+  border: 1px solid white;
+  transition: 300ms;
+}
+.btn_card:hover {
+  box-shadow: 4px 4px white;
+}
+.btn_card:hover::before {
+  translate: -5px -5px;
+}
+
+button {
+  z-index: 10;
+}
